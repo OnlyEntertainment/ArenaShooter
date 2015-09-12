@@ -43,8 +43,6 @@ GameObject:
   - 92: {fileID: 9269626}
   - 81: {fileID: 8158502}
   - 114: {fileID: 11405432}
-  - 114: {fileID: 11482328}
-  - 114: {fileID: 11445922}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1547,8 +1545,8 @@ MonoBehaviour:
   minX: -360
   maxX: 360
   sensitivityY: 400
-  minY: -60
-  maxY: 50
+  minY: -90
+  maxY: 90
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
   networkObject: {fileID: 11430336}
 --- !u!114 &11430336
@@ -1600,26 +1598,6 @@ MonoBehaviour:
     i15: 177
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &11445922
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: .100000001
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: .00100000005
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &11461186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1656,42 +1634,10 @@ MonoBehaviour:
   minX: -360
   maxX: 360
   sensitivityY: 400
-  minY: -60
-  maxY: 60
+  minY: -90
+  maxY: 90
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
   networkObject: {fileID: 11461186}
---- !u!114 &11482328
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 57
-    i1: 52
-    i2: 179
-    i3: 204
-    i4: 187
-    i5: 54
-    i6: 230
-    i7: 196
-    i8: 121
-    i9: 157
-    i10: 18
-    i11: 7
-    i12: 180
-    i13: 80
-    i14: 24
-    i15: 177
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!124 &12466780
 Behaviour:
   m_ObjectHideFlags: 1
@@ -1792,13 +1738,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.79999995
-  m_Radius: .174999997
+  m_Height: 1.75
+  m_Radius: .300000012
   m_SlopeLimit: 45
   m_StepOffset: .5
   m_SkinWidth: .0799999982
   m_MinMoveDistance: .00100000005
-  m_Center: {x: 0, y: .899999976, z: 0}
+  m_Center: {x: 0, y: .949999988, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -1910,6 +1856,26 @@ Prefab:
       propertyPath: playerCameraObject
       value: 
       objectReference: {fileID: 101484}
+    - target: {fileID: 0}
+      propertyPath: minY
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxY
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Height
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Center.y
+      value: .949999988
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 150902}
