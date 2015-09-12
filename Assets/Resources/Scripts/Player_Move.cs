@@ -6,7 +6,7 @@ public class Player_Move : MonoBehaviour
 
     float walkSpeed = 5.0f;
     float runMultiplier = 2.0f;
-    float jumpSpeed = 1000.0f;
+    float jumpSpeed = 300.0f;
 
     bool isGrounded = true;
 
@@ -31,7 +31,7 @@ public class Player_Move : MonoBehaviour
     void Jump()
     {
         RaycastHit rayHit;
-        if (Physics.Raycast(transform.position, -transform.up, out rayHit, this.transform.localScale.y / 2))
+        if (Physics.Raycast(transform.position, -transform.up, out rayHit, this.transform.localScale.y / 2+0.05f))
         { isGrounded = true; }
         else
         { isGrounded = false; }

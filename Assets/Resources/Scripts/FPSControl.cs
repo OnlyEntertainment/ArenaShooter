@@ -3,8 +3,8 @@ using System.Collections;
 
 public class FPSControl : MonoBehaviour {
 
-    public float speed = 200;
-    public float jumpSpeed = 10;
+    public float speed = 9;
+    public float jumpSpeed = 18;
     public Vector3 moveDirection = Vector3.zero;
     public float gravity = 90;
     public bool grounded = false;
