@@ -63,3 +63,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 Assets/Resources/Scripts/Player_Move.cs
+ProjectSettings/EditorBuildSettings.asset
