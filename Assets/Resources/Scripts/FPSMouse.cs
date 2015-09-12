@@ -2,7 +2,7 @@
 using UnityEngine.Networking;
 using System.Collections;
 
-public class FPSMouse : NetworkBehaviour {
+public class FPSMouse : MonoBehaviour {
 
     public enum ROTATIONAXIS { MouseX = 1, MouseY = 2}
     public ROTATIONAXIS rotation = ROTATIONAXIS.MouseX | ROTATIONAXIS.MouseY;
@@ -19,6 +19,8 @@ public class FPSMouse : NetworkBehaviour {
 
     public Quaternion originalRotation;
 
+    public NetworkBehaviour networkObject;
+
 	void Start ()
     {
 
@@ -31,7 +33,7 @@ public class FPSMouse : NetworkBehaviour {
 	
 	void Update () 
     {
-        if (!isLocalPlayer) return;
+        if (!networkObject.isLocalPlayer) return;
 
         if (rotation == ROTATIONAXIS.MouseX)
         {

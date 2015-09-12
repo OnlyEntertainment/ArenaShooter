@@ -11,13 +11,13 @@ public class FPSControl : NetworkBehaviour {
     public float gravity = 90;
     public bool grounded = false;
 
-    public Camera playerCamera;
+    public GameObject playerCameraObject;
 
-    void Awake()
+    void Start()
     {
         if (isLocalPlayer)
         {
-            playerCamera.enabled = true;
+            playerCameraObject.SetActive(true);
         }
     }
 
