@@ -1,0 +1,41 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class FPSControl : MonoBehaviour {
+
+    public float speed = 200;
+    public float jumpSpeed = 10;
+    public Vector3 moveDirection = Vector3.zero;
+    public float gravity = 90;
+    public bool grounded = false;
+	
+	// Update is called once per frame
+	void Update () 
+    {
+
+        if (grounded == true)
+        {
+
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
+
+            
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            moveDirection.y = jumpSpeed;
+        }
+
+        moveDirection.y -= gravity * Time.deltaTime;
+
+        CharacterController cController = GetComponent<CharacterController>();
+        CollisionFlags flags = cController.Move(moveDirection * Time.deltaTime); // 19 - 2:45
+
+        grounded = (flags & CollisionFlags.CollidedBelow) != 0;
+
+	}
+
+
+} // END Class
