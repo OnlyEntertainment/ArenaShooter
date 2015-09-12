@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class MouseLook : MonoBehaviour
+public class MouseLook : NetworkBehaviour
 {
 
     public enum RotationAxes { MouseXAndY, MouseX, MouseY }
@@ -41,6 +42,8 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isLocalPlayer) return;
+
         if (rotateAroundAxes == RotationAxes.MouseXAndY)
         {
             float rotationX = myTransform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensivityX;

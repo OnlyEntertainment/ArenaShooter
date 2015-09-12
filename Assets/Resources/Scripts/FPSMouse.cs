@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class FPSMouse : MonoBehaviour {
+public class FPSMouse : NetworkBehaviour {
 
     public enum ROTATIONAXIS { MouseX = 1, MouseY = 2}
     public ROTATIONAXIS rotation = ROTATIONAXIS.MouseX | ROTATIONAXIS.MouseY;
@@ -24,11 +25,13 @@ public class FPSMouse : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
         
         originalRotation = transform.localRotation;
+
 	} // END Start
 	
 	
 	void Update () 
     {
+        if (!isLocalPlayer) return;
 
         if (rotation == ROTATIONAXIS.MouseX)
         {

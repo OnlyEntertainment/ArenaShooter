@@ -25710,6 +25710,7 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0, z: 0}
   gravity: 90
   grounded: 0
+  playerCamera: {fileID: 0}
 --- !u!114 &1362103507
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,17 +1,31 @@
 ﻿using UnityEngine;
+using UnityEngine.Networking;
 using System.Collections;
 
-public class FPSControl : MonoBehaviour {
+
+public class FPSControl : NetworkBehaviour {
 
     public float speed = 9;
     public float jumpSpeed = 18;
     public Vector3 moveDirection = Vector3.zero;
     public float gravity = 90;
     public bool grounded = false;
-	
+
+    public Camera playerCamera;
+
+    void Awake()
+    {
+        if (isLocalPlayer)
+        {
+            playerCamera.enabled = true;
+        }
+    }
+
 	// Update is called once per frame
 	void Update () 
     {
+
+        if (!isLocalPlayer) return;
 
         if (grounded == true)
         {
