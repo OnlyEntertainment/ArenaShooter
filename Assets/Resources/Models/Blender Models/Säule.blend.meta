@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 6c46e1f9105c3ae468895a473929c8af
+timeCreated: 1442138253
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Lower_Plate
+    100002: Lower_Plate_001
+    100004: Lower_Plate_002
+    100006: Lower_Plate_003
+    100008: Stick
+    100010: //RootNode
+    100012: Upper_Plate
+    100014: Upper_Plate_001
+    100016: Upper_Plate_002
+    100018: Upper_Plate_003
+    100020: Street_Corner90
+    100022: Street_Straight
+    100024: Street_StraightEnd
+    400000: Lower_Plate
+    400002: Lower_Plate_001
+    400004: Lower_Plate_002
+    400006: Lower_Plate_003
+    400008: Stick
+    400010: //RootNode
+    400012: Upper_Plate
+    400014: Upper_Plate_001
+    400016: Upper_Plate_002
+    400018: Upper_Plate_003
+    400020: Street_Corner90
+    400022: Street_Straight
+    400024: Street_StraightEnd
+    2300000: Lower_Plate
+    2300002: Lower_Plate_001
+    2300004: Lower_Plate_002
+    2300006: Lower_Plate_003
+    2300008: Stick
+    2300010: Upper_Plate
+    2300012: Upper_Plate_001
+    2300014: Upper_Plate_002
+    2300016: Upper_Plate_003
+    2300018: Street_Corner90
+    2300020: Street_Straight
+    2300022: Street_StraightEnd
+    3300000: Lower_Plate
+    3300002: Lower_Plate_001
+    3300004: Lower_Plate_002
+    3300006: Lower_Plate_003
+    3300008: Stick
+    3300010: Upper_Plate
+    3300012: Upper_Plate_001
+    3300014: Upper_Plate_002
+    3300016: Upper_Plate_003
+    3300018: Street_Corner90
+    3300020: Street_Straight
+    3300022: Street_StraightEnd
+    4300000: Upper_Plate_003
+    4300002: Upper_Plate_002
+    4300004: Upper_Plate_001
+    4300006: Upper_Plate
+    4300008: Lower_Plate_003
+    4300010: Lower_Plate_002
+    4300012: Lower_Plate_001
+    4300014: Lower_Plate
+    4300016: Stick
+    4300018: Street_Corner90
+    4300020: Street_StraightEnd
+    4300022: Street_Straight
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

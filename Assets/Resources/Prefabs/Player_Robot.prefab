@@ -1547,8 +1547,8 @@ MonoBehaviour:
   minX: -360
   maxX: 360
   sensitivityY: 400
-  minY: -60
-  maxY: 50
+  minY: -90
+  maxY: 90
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
   networkObject: {fileID: 11430336}
 --- !u!114 &11430336
@@ -1562,11 +1562,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1525cfb5968264884cd86c096b983d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9
-  jumpSpeed: 18
-  moveDirection: {x: 0, y: 0, z: 0}
-  gravity: 90
+  speedWalk: 9
+  speedRun: 14
+  isRunning: 0
+  stamina: 100
+  staminaRegenerateRate: 3
+  staminaUsage: 5
   grounded: 0
+  jumpSpeed: 18
+  gravity: 90
+  moveDirection: {x: 0, y: 0, z: 0}
   playerCameraObject: {fileID: 101484}
 --- !u!114 &11436642
 MonoBehaviour:
@@ -1656,8 +1661,8 @@ MonoBehaviour:
   minX: -360
   maxX: 360
   sensitivityY: 400
-  minY: -60
-  maxY: 60
+  minY: -90
+  maxY: 90
   originalRotation: {x: 0, y: 0, z: 0, w: 0}
   networkObject: {fileID: 11461186}
 --- !u!114 &11482328
@@ -1910,6 +1915,14 @@ Prefab:
       propertyPath: playerCameraObject
       value: 
       objectReference: {fileID: 101484}
+    - target: {fileID: 0}
+      propertyPath: minY
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxY
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 150902}
