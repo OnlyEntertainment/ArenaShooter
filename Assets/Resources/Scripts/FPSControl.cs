@@ -41,8 +41,9 @@ public class FPSControl : NetworkBehaviour {
 	
 	void Update () 
     {
-
         if (!isLocalPlayer) return;
+
+
 
         if (grounded == true)
         {
